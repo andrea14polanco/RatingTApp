@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pagina Principal</title>
+    <title>Sobre nosotros</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -33,13 +33,8 @@
 </head>
 
 <body>
-       <br>
-	    <br>
-		 <br>
-		  <br> <br>
-		   <br>
-		    <br>
-    <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+     
+      <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -52,52 +47,54 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Principal</a></li>
-                    <li><a href="about-us.html">Sobre Nosotros</a></li>
+                    <li ><a href="index.html">Principal</a></li>
+                    <li class="active"><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Profesores <i class="icon-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Anadir Profesor</a></li>
-                            <li><a href="#">Evaluar Profesor</a></li>
-                            <li><a href="#">Lista de profesores</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                         <li><a href="anadir-profesor.html">Anadir Profesor</a></li>
+                            <li><a href="consulta-profesor.html">Lista de profesores</a></li>
+                       
                         </ul>
                     </li>
 					<li><a href="ranking.html">Ranking de profesores</a></li>
-                    <li><a href="foro.html">Foro</a></li> 
-                    <li><a href="contacto.html">Contacto</a></li>
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Buscar Profesor">
-						<div class="input-group-btn">
-						<button class="btn btn-default" type="submit">
-							<i class="glyphicon glyphicon-search"></i>
-						</button>
+                   
                 </ul>
+				<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
             </div>
         </div>
     </header><!--/header-->
+
+	
+	<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Sobre nosotros...</h1>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <div class="section">
 	    	<div class="container">
 				<div class="row">
 				<div class="col-sm-4">
-				<img class="img-responsive" src="img/about-us.jpg" alt="About Us">
+				<img class="img-responsive" src="img/sobre-nosotros.jpg" alt="About Us">
 				</div>
 				<div class="col-sm-8">
-						<h2>We are a Graphic Design company</h2>
-						<h3>Specializing in Wordpress Theme Development</h3>
+						<h2>Somos estudiantes de la materia Gestion de Proyectos</h2>
+						<br>
+						<h3>RatingTApp</h3>
 						<p>
-							Donec elementum mi vitae enim fermentum lobortis. In hac habitasse platea dictumst. Ut pellentesque, orci sed mattis consequat, libero ante lacinia arcu, ac porta lacus urna in lorem. Praesent consectetur tristique augue, eget elementum diam suscipit id. Donec elementum mi vitae enim fermentum lobortis. In hac habitasse platea dictumst. Ut pellentesque, orci sed mattis consequat, libero ante lacinia arcu, ac porta lacus urna in lorem. Praesent consectetur tristique augue, eget elementum diam suscipit id.
-						</p>
+							<b>RatinTApp</b> es una aplicación que sirve como instrumento que proporcione a los estudiantes del INTEC la posibilidad de valorar y opinar (comentar) la labor de sus profesores, maestros y facilitadores a la hora de impartir clases en las aulas y, de consultar las valoraciones previamente realizadas por otros estudiantes sobre un profesor, con el fin de conocer al docente antes de tomar clases con este en el INTEC.
+						</p>					
+						<h3>Alcance de la pagina</h3>
 						<p>
-							Donec elementum mi vitae enim fermentum lobortis. In hac habitasse platea dictumst. Ut pellentesque, orci sed mattis consequat, libero ante lacinia arcu, ac porta lacus urna in lorem. Praesent consectetur tristique augue, eget elementum diam suscipit id.
-						</p>						
-						<h3>Wide range of services</h3>
-						<p>
-							Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam condimentum laoreet sagittis. Duis quis ullamcorper leo. Suspendisse potenti.
-							Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam condimentum laoreet sagittis. Duis quis ullamcorper leo. Suspendisse potenti.
+						Con la aplicacion de <b>RatingTApp</b> nuestro equipo busca la confianza con los estudiantes para que puedan dar su opinion acerca de los docentes que imparten las materias basicas y de su carrera. 
 						</p>
 										
 					</div>
@@ -109,30 +106,29 @@
     <div class="section">
 	    	<div class="container">
 				<div class="row">
-					<!-- Team Member -->
-			
-					<!-- End Team Member -->
+					
 					<div class="col-md-3 col-sm-6">
 						<div class="team-member">
-							<div class="team-member-image"><img src="img/team/imgAndrea.jpg" alt="Andrea"></div>
+							<div class="team-member-image"><img src="img/team/imgAndrea.png" alt="Andrea"></div>
 							<div class="team-member-info">
 								<ul>
 									<li class="team-member-name">
 										Andrea Polanco
+										</li>
 										<span class="team-member-social">
 											<a href="#"><i class="icon-facebook"></i></a>
 											<a href="#"><i class="icon-dribbble"></i></a>
 											<a href="#"><i class="icon-tumblr"></i></a>
 										</span>
-									</li>
-									<li>Project Manager</li>
+									
+									<li>Project Manager y Tester</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-6">
 						<div class="team-member">
-							<div class="team-member-image"><img src="img/team/" alt="Carlos"></div>
+							<div class="team-member-image"><img src="img/team/imgCarlos.png" alt="Carlos"></div>
 							<div class="team-member-info">
 								<ul>
 									<li class="team-member-name">
@@ -143,49 +139,49 @@
 											<a href="#"><i class="icon-tumblr"></i></a>
 										</span>
 									</li>
-									<li>Diseñador y programador Web</li>
+									<li>Analista, Arquitecto de Software y programador</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 							<div class="col-md-3 col-sm-6">
 						<div class="team-member">
-							<!-- Team Member Photo -->
-							<div class="team-member-image"><img src="img/team/1.jpg" alt="Name Surname"></div>
+							<!-- Photo -->
+							<div class="team-member-image"><img src="img/team/imgRene.jpg" alt="Rene"></div>
 							<div class="team-member-info">
 								<ul>
-									<!-- Team Member Info & Social Links -->
+									<!--  Info & Social Links -->
 									<li class="team-member-name">
-										RENE
-										<!-- Team Member Social Links -->
+										Rene Baez
+										<!-- Social Links -->
 										<span class="team-member-social">
 											<a href="#"><i class="icon-facebook"></i></a>
 											<a href="#"><i class="icon-github"></i></a>
 											<a href="#"><i class="icon-tumblr"></i></a>
 										</span>
 									</li>
-									<li>NA</li>
+									<li>Programador y Tester</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 							<div class="col-md-3 col-sm-6">
 						<div class="team-member">
-							<!-- Team Member Photo -->
-							<div class="team-member-image"><img src="img/team/1.jpg" alt="Name Surname"></div>
+							<!-- r Photo -->
+							<div class="team-member-image"><img src="img/team/imgJose.jpg" alt="Jose"></div>
 							<div class="team-member-info">
 								<ul>
-									<!-- Team Member Info & Social Links -->
+									<!--  Info & Social Links -->
 									<li class="team-member-name">
-										Bobe
-										<!-- Team Member Social Links -->
+										Jose Segura
+										<!--  Social Links -->
 										<span class="team-member-social">
 											<a href="#"><i class="icon-facebook"></i></a>
 											<a href="#"><i class="icon-github"></i></a>
 											<a href="#"><i class="icon-tumblr"></i></a>
 										</span>
 									</li>
-									<li>NA</li>
+									<li>Diseñador web, Tester y Documentador</li>
 								</ul>
 							</div>
 						</div>
@@ -196,7 +192,7 @@
 
 
 <hr>
-	    <!-- Footer -->
+	   
 	    <div class="footer">
 	    	<div class="container">
 			

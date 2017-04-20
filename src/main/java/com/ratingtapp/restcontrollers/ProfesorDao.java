@@ -1,10 +1,14 @@
 package com.ratingtapp.restcontrollers;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-import com.ratingtapp.models.ListaProfesores;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+
+import com.ratingtapp.models.Profesor;
 
 
-public interface ProfesorDao  {
+
+
+@RepositoryRestResource(path = "profesor",collectionResourceRel = "profesor")
+public interface ProfesorDao  extends CrudRepository<Profesor, Long>{
 		
 }
