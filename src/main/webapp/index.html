@@ -10,13 +10,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Pagina Principal</title>
+<title>Página Principal</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="/RatingTApp/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="/RatingTApp/css/main.css">
 <link href="/RatingTApp/css/custom.css" rel="stylesheet">
 
 <script src="//use.edgefonts.net/bebas-neue.js"></script>
@@ -40,13 +40,13 @@
 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 
 
-<base href="RatingTApp"></base>
+<base href="/RatingTApp/index.html"></base>
 
 </head>
 
 <body ng-app="RatingTApp">
 
-	<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+	<!-- <header class="navbar navbar-inverse navbar-fixed-top" role="banner"> -->
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -56,22 +56,22 @@
 						class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="index.html">
-				
+
 				<img
 					src="/RatingTApp/img/ratintapp.png" alt="RatingTApp"></a>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="index.html">Principal</a></li>
-					<li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+					<li><a ng-href="/RatingTApp/About">Sobre Nosotros</a></li>
 					<li class="dropdown"><a href="#" class="dropdown-toggle"
 						data-toggle="dropdown"> Profesores <i class="icon-angle-down"></i></a>
 						<ul class="dropdown-menu">
-							<li><a href="anadir-profesor.html">Anadir Profesor</a></li>
-							<li><a href="consulta-profesor.html">Lista de profesores</a></li>
+							<li><a ng-href="/RatingTApp/Profesores/Create">Anadir Profesor</a></li>
+							<li><a ng-href="/RatingTApp/Profesores">Lista de profesores</a></li>
 
-						</ul></li>
-					<li><a href="ranking.html">Ranking de profesores</a></li>
+						</ul>
+					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="text"
@@ -80,17 +80,12 @@
 				</form>
 			</div>
 		</div>
-	</header>
+	<!-- </header> -->
 	<!--/header-->
 
 
-	<div class="container">
-
+	<div class="container" style="display: inline-block; text-align: center;">
 		<ng-view> </ng-view>
-
-
-
-
 	</div>
 
 
@@ -140,13 +135,13 @@
 	</div>
 
 	<!-- Javascripts -->
-	<!-- script 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 	<script src="/RatingTApp/js/bootstrap.min.js"></script>
 
-	<!-- Scrolling Nav JavaScript 
+	<!-- Scrolling Nav JavaScript -->
 	<script src="/RatingTApp/js/jquery.easing.min.js"></script>
-	<script src="/RatingTApp/js/scrolling-nav.js"></script> -->
+	<script src="/RatingTApp/js/scrolling-nav.js"></script>
 
 	<script src="/RatingTApp/app.js"></script>
 
