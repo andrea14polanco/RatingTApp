@@ -1,15 +1,20 @@
 var app = angular.module("RatingTApp", ["ngRoute"]);
 
-app.controller('ProfesorController', function(){
-	console.log('controller');
+app.controller('ProfesorList', function($scope, $http){
+	$scope.profesores = {};
+	
+	$http.get('/RatingTApp/profesores')
+		.then(function(request){
+			$scope.profesores = request.data;
+		});
 });
 
 app.config(function($routeProvider, $locationProvider) {
-	 //
+	 
 	  $routeProvider
 			  .when("/Profesores", {
 			    templateUrl : "profesores/list.html",
-			    controller: 'ProfesorController'
+			    controller: 'ProfesorList'
 			  })
 			  .when("/Profesores/Create", {
 			    templateUrl : "profesores/nuevo-anadir-profesor.html"
