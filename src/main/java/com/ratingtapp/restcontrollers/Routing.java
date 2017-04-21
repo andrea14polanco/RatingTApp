@@ -8,10 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Routing implements Serializable{
 	@RequestMapping({
-        "/Profesores**",
-        "/Home**"
+        "/Profesores/**",
+        "/Home/**",
+				"/About"
     })
     public String index() {
-        return "forward:/RatingTApp/index.html";
+        return "forward:/index.html";
     }
 }
